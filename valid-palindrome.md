@@ -27,4 +27,34 @@ class Solution:
 
 ## Rust
 
-_(not yet)_
+```rust
+impl Solution {
+    pub fn is_palindrome(s: String) -> bool {
+        let chars: Vec<char> = s.chars().collect();
+        let mut i = 0;
+        let mut j = chars.len() - 1;
+
+        while i < j {
+            let ci = chars[i];
+            let cj = chars[j];
+            if !ci.is_alphanumeric() {
+                i = i + 1;
+                continue
+            }
+
+            if !cj.is_alphanumeric() {
+                j = j - 1;
+                continue
+            }
+
+            if ci.to_ascii_lowercase() != cj.to_ascii_lowercase() {
+                return false
+            }
+
+            i = i + 1;
+            j = j - 1;
+        }
+        true
+    }
+}
+```
