@@ -1,10 +1,38 @@
+# Merge Two Sorted Lists
+
+## Python
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        head = current = ListNode()
+        while list1 and list2:
+            if list1.val < list2.val:
+                current.next = list1
+                list1, current = list1.next, list1
+            else:
+                current.next = list2
+                list2, current = list2.next, list2
+
+        current.next = list1 if list1 else list2
+        return head.next
+```
+
+## Rust
+
+```rust
 // Definition for singly-linked list.
 // #[derive(PartialEq, Eq, Clone, Debug)]
 // pub struct ListNode {
 //   pub val: i32,
 //   pub next: Option<Box<ListNode>>
 // }
-// 
+//
 // impl ListNode {
 //   #[inline]
 //   fn new(val: i32) -> Self {
@@ -16,7 +44,7 @@
 // }
 impl Solution {
     pub fn merge_two_lists(
-        mut list1: Option<Box<ListNode>>, 
+        mut list1: Option<Box<ListNode>>,
         mut list2: Option<Box<ListNode>>
     ) -> Option<Box<ListNode>> {
         let mut dummy = ListNode::new(0);
@@ -45,3 +73,4 @@ impl Solution {
         dummy.next
     }
 }
+```

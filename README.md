@@ -4,11 +4,12 @@ Solutions to the problems listed in: https://www.techinterviewhandbook.org/grind
 
 ## Completed exercises
 
-Each exercise has its own folder under `exercises/<problem-slug>/` with two subfolders: `python/` for the Python solution and `rust/` for the Rust solution.
+Each problem is a single markdown file at the repo root, named after the exercise (kebab-case). Each file has **Python** and **Rust** sections when both exist; you can fill in one language first and add the other later.
 
-| Exercise | Python solution | Rust solution |
-| -------- | --------------- | ------------- |
-| [Two Sum](https://leetcode.com/problems/two-sum/) | [python](./exercises/two-sum/python) | [rust](./exercises/two-sum/rust) |
-| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [python](./exercises/best-time-to-buy-and-sell/python) | [rust](./exercises/best-time-to-buy-and-sell/rust) |
-| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [python](./exercises/valid-parenthesis/python) | [rust](./exercises/valid-parenthesis/rust) |
-| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [python](./exercises/merge-sorted-linked-lists/python) | [rust](./exercises/merge-sorted-linked-lists/rust) |
+| Exercise | LeetCode | Solutions |
+| -------- | -------- | --------- |
+| Two Sum | [LeetCode](https://leetcode.com/problems/two-sum/) | [two-sum.md](./two-sum.md) |
+| Best Time to Buy and Sell Stock | [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [best-time-to-buy-and-sell-stock.md](./best-time-to-buy-and-sell-stock.md) |
+| Valid Parentheses | [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [valid-parentheses.md](./valid-parentheses.md) |
+| Merge Two Sorted Lists | [LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/) | [merge-two-sorted-lists.md](./merge-two-sorted-lists.md) |
+| Valid Palindrome | [LeetCode](https://leetcode.com/problems/valid-palindrome/) | [valid-palindrome.md](./valid-palindrome.md) |
